@@ -15,6 +15,12 @@
 .chargement
 {
   background-color:black;
-  height:55%;
+  height:35%;
   
+}
+.coeur
+{
+    color:red;
+    margin-top: -10px;
+    padding-left: 2px;
 }
