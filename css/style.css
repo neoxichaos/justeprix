@@ -87,6 +87,18 @@ h1 {
   height: 60px;
 }
 
-.plus {
-  background-color: pink;
+/* PLus / moins */
+.erreur
+{
+    display: flex;
+    flex-direction: column;
+}
+.plus
+{
+    background-color: grey;
+}
+.moins
+{
+    background-color: grey;
+    margin-bottom: 10px;
 }
