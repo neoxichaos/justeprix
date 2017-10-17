@@ -1,6 +1,6 @@
 .carrer
 {
-	border: 1px solid black;
+	
 }
 /* Barre de vie */
 .vie
@@ -53,4 +53,36 @@
 #reset:hover
 {
     background-color: lightblue;
+}
+header {
+
+	background-image: url("../money.png");
+/* 	background-color: blue; */
+	
+    
+}
+
+h1 { 
+
+	color: black;
+	/* text-shadow: 2px 2px #000000; */
+	font-size: 50px;
+	padding-bottom: 10%;
+	padding-top: 10%;
+	text-shadow: 1px 1px #000000;
+
+ }
+
+ .regle {
+
+ 	text-align: center;
+ }
+
+.toinou {
+	width: 100%;
+	height: 60px;
+}
+
+.plus {
+	background-color: pink;
 }
