@@ -1,5 +1,6 @@
 .carrer
 {
+<<<<<<< Updated upstream
 	
 }
 /* Barre de vie */
@@ -56,34 +57,36 @@
 }
 header {
 
-	background-image: url("../money.png");
-/* 	background-color: blue; */
-	
+  background-image: url("../money.png");
+/*  background-color: blue; */
+  
     
 }
 
 h1 { 
 
-	color: black;
-	/* text-shadow: 2px 2px #000000; */
-	font-size: 50px;
-	padding-bottom: 10%;
-	padding-top: 10%;
-	text-shadow: 1px 1px #000000;
+  color: black;
+  /* text-shadow: 2px 2px #000000; */
+  font-size: 50px;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  text-shadow: 1px 1px #000000;
 
  }
 
  .regle {
 
- 	text-align: center;
-    padding-bottom: 10px;
+  text-align: center;
+  font-size: 200%;
+  margin-top: 3%;
+  margin-bottom: 3%;
  }
 
 .toinou {
-	width: 100%;
-	height: 60px;
+  width: 100%;
+  height: 60px;
 }
 
 .plus {
-	background-color: pink;
+  background-color: pink;
 }
