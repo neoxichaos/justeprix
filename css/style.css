@@ -57,7 +57,9 @@
 }
 header {
 
-  background-image: url("../money.png");
+  background-image: url("../inspector.png");
+  background-repeat: no-repeat;
+  background-size: 
 /*  background-color: blue; */
   
     
@@ -65,7 +67,7 @@ header {
 
 h1 { 
 
-  color: black;
+  color: #ffffff;
   /* text-shadow: 2px 2px #000000; */
   font-size: 50px;
   padding-bottom: 10%;
