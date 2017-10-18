@@ -4,9 +4,8 @@
 	}
 		var y;
         var cpt;
-        var i;
-        i = 0;
         cpt = 0;
+        var barre = document.querySelector(".chargement");
 		y = getRandomInt(0,100);
 		console.log(y);
         var plus = document.querySelector(".plus");
@@ -46,15 +45,20 @@
             plus.style.backgroundColor = "grey";
             document.querySelector('#envoyer').classList.add("hidden");
             document.querySelector('#reponse').classList.remove("hidden");
-            document.querySelector("#reponse").innerHTML = " Bravo! Tu as trouvé la bonne reponse en " + cpt + " coups";
+            document.querySelector("#reponse").innerHTML = " gagner ! ";
 		}
         console.log(cpt);
-        if (cpt > 10)
+        if (cpt > 9)
             {
                 console.log("titi");
                 document.querySelector("#reponse").classList.remove("hidden");
                 document.querySelector("#envoyer").classList.add("hidden");
-             document.querySelector("#reponse").innerHTML = "   Tu as échoué";   
+             document.querySelector("#reponse").innerHTML = "Perdu";   
+            }
+        if(cpt > 0)
+            {
+                console.log(10*cpt);
+                barre.style.height = 10*cpt+"%"; 
             }
         
         }
