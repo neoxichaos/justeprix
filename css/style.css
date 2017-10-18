@@ -15,6 +15,9 @@ body {
 {
   background-color:black;
   height:0%;
+    -webkit-transition: height 500ms linear;
+    -ms-transition: height 500ms linear;
+    transition: height 500ms linear;
   
 }
 .coeur
@@ -66,6 +69,7 @@ body {
     border-radius: 5px;
     margin-top: 2%;
     float: right;
+    text-decoration: none;
 }
 #reset:hover
 {

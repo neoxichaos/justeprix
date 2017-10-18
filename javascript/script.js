@@ -45,7 +45,7 @@
             plus.style.backgroundColor = "grey";
             document.querySelector('#envoyer').classList.add("hidden");
             document.querySelector('#reponse').classList.remove("hidden");
-            document.querySelector("#reponse").innerHTML = " gagner ! ";
+            document.querySelector("#reponse").innerHTML = " gagner ! "+cpt+" coups";
 		}
         console.log(cpt);
         if (cpt > 9)
