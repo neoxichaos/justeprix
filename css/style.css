@@ -1,5 +1,5 @@
 body {
-	background-color: lightgrey;
+	background-color: #FEEEDF;
 }
 /* Barre de vie */
 .vie
@@ -48,9 +48,9 @@ transition: height 500ms linear;
     margin-top: 10px;
     width: 100%;
     height: 50px;
-    background-color: black;
-    color:#CCBD97;
-    border:1px solid black;
+    background-color: #9A8663;
+    color:black;
+    border:1px solid transparent;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
@@ -64,13 +64,19 @@ transition: height 500ms linear;
 }
 #reset 
 {
-    background-color: black;
-    border:1px solid transparent;
-    color:#CCBD97;
+    background-color: #9A8663;
+    color:black;
     border-radius: 5px;
     margin-top: 2%;
     float: right;
     text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 #reset:hover
 {
@@ -82,7 +88,7 @@ header {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-    background-color: #261F17;
+    background-color: #9A8663;
   background-size: 
 /*  background-color: blue; */
   
@@ -96,7 +102,6 @@ h1 {
   font-size: 50px;
   padding-bottom: 10%;
   padding-top: 10%;
-  text-shadow: 1px 1px #000000;
 
  }
 
@@ -114,7 +119,7 @@ h1 {
 }
 
 .plus {
-  background-color: grey;
+  background-color: #837F6B;
   color:black;
   font-size: 20px;
   border-radius: 5px;
@@ -123,7 +128,7 @@ h1 {
     transition: background-color 500ms linear;
 }
 .moins {
-  background-color: grey;
+  background-color: #837F6B;
   color:black;
   font-size: 20px;
   border-radius: 5px;

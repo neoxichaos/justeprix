@@ -29,20 +29,20 @@
 
 		if (nb > y)
 		{
-            moins.style.backgroundColor = "red";
-            plus.style.backgroundColor = "grey";
+            moins.style.backgroundColor = "#DAB8A1";
+            plus.style.backgroundColor = "#837F6B";
             cpt++;
 		}
 		else if (nb < y)
 		{
-            plus.style.backgroundColor = "red";
-            moins.style.backgroundColor = "grey";
+            plus.style.backgroundColor = "#DAB8A1";
+            moins.style.backgroundColor = "#837F6B";
             cpt++;
 		}
 		else if (nb == y && cpt < 10)
 		{
-            moins.style.backgroundColor = "grey";
-            plus.style.backgroundColor = "grey";
+            moins.style.backgroundColor = "#837F6B";
+            plus.style.backgroundColor = "#837F6B";
             document.querySelector('#envoyer').classList.add("hidden");
             document.querySelector('#reponse').classList.remove("hidden");
             document.querySelector("#reponse").innerHTML = " gagner ! "+cpt+" coups";
