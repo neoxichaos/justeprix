@@ -40,7 +40,7 @@
             moins.style.backgroundColor = "grey";
             cpt++;
 		}
-		else if (nb == y)
+		else if (nb == y && cpt < 10)
 		{
             moins.style.backgroundColor = "grey";
             plus.style.backgroundColor = "grey";
@@ -48,10 +48,15 @@
             document.querySelector('#reponse').classList.remove("hidden");
             document.querySelector("#reponse").innerHTML = " Bravo! Tu as trouvé la bonne reponse en " + cpt + " coups";
 		}
-        if (cpt == 3)
+        console.log(cpt);
+        if (cpt > 10)
             {
-             document.querySelector("#reponse").innerHTML = " Tu as échouer";   
+                console.log("titi");
+                document.querySelector("#reponse").classList.remove("hidden");
+                document.querySelector("#envoyer").classList.add("hidden");
+             document.querySelector("#reponse").innerHTML = "   Tu as échoué";   
             }
+        
         }
 
 	}
