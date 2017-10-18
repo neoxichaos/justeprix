@@ -1,5 +1,5 @@
 body {
-	background-color: lightpink;
+	background-color: lightgrey;
 }
 /* Barre de vie */
 .vie
@@ -15,9 +15,9 @@ body {
 {
   background-color:black;
   height:0%;
-    -webkit-transition: height 500ms linear;
-    -ms-transition: height 500ms linear;
-    transition: height 500ms linear;
+-webkit-transition: height 500ms linear;
+-ms-transition: height 500ms linear;
+transition: height 500ms linear;
   
 }
 .coeur
@@ -40,6 +40,7 @@ body {
     -ms-transition: background-color 1000ms linear;
     transition: background-color 1000ms linear;
     border-radius: 5px;
+    text-align: center;
 }
 #envoyer
 {
@@ -117,12 +118,18 @@ h1 {
   color:black;
   font-size: 20px;
   border-radius: 5px;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 .moins {
   background-color: grey;
   color:black;
   font-size: 20px;
   border-radius: 5px;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
