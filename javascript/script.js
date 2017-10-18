@@ -5,7 +5,8 @@
 		var y;
 		y = getRandomInt(0,100);
 		console.log(y);
-
+        var plus = document.querySelector(".plus");
+        var moins = document.querySelector(".moins");
 	function test() {
 
 		var nb = document.querySelector(".toinou").value;
@@ -24,15 +25,21 @@
 
 		if (nb > y)
 		{
-			alert('Superieur');
+            moins.style.backgroundColor = "red";
+            plus.style.backgroundColor = "grey";
 		}
 		else if (nb < y)
 		{
-			alert('Inferieur');
+            plus.style.backgroundColor = "red";
+            moins.style.backgroundColor = "grey";
 		}
 		else if (nb == y)
 		{
-			alert('bravo');
+            moins.style.backgroundColor = "grey";
+            plus.style.backgroundColor = "grey";
+            document.querySelector('#envoyer').classList.add("hidden");
+            document.querySelector('#reponse').classList.remove("hidden");
+            document.querySelector("#reponse").innerHTML = " La reponse est " + y;
 		}
 
 
