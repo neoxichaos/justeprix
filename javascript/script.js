@@ -1,10 +1,17 @@
+	function getRandomInt(min, max) {
+	  
+	  return Math.floor(Math.random() * (max - min) + min);
+	}
+		var y;
+		y = getRandomInt(0,100);
+		console.log(y);
 
 	function test() {
+
 		var nb = document.querySelector(".toinou").value;
 		console.log(nb);
 		console.log("toto");
 		var x;
-
 		x = /^[0-9]{1,3}$/;
 
 
@@ -14,5 +21,19 @@
 			console.log("titi");
 			alert('azertyui');	
 		}
+
+		if (nb > y)
+		{
+			alert('Superieur');
+		}
+		else if (nb < y)
+		{
+			alert('Inferieur');
+		}
+		else if (nb == y)
+		{
+			alert('bravo');
+		}
+
 
 	}
