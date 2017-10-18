@@ -1,6 +1,7 @@
 body {
 	background-color: #FEEEDF;
 }
+
 /* Barre de vie */
 .vie
 {
@@ -88,8 +89,8 @@ header {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-    background-color: #9A8663;
-  background-size: 
+  background-color: #9A8663;
+  font-family: 'Permanent Marker', cursive;
 /*  background-color: blue; */
   
     
