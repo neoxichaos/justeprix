@@ -3,6 +3,10 @@
 	  return Math.floor(Math.random() * (max - min) + min);
 	}
 		var y;
+        var cpt;
+        var i;
+        i = 0;
+        cpt = 0;
 		y = getRandomInt(0,100);
 		console.log(y);
         var plus = document.querySelector(".plus");
@@ -20,18 +24,21 @@
 		{
 			console.log(nb);
 			console.log("titi");
-			alert('azertyui');	
-		}
+            document.querySelector('.erreur').classList.remove("hidden");
+		}else{
+            document.querySelector('.erreur').classList.add("hidden");
 
 		if (nb > y)
 		{
             moins.style.backgroundColor = "red";
             plus.style.backgroundColor = "grey";
+            cpt++;
 		}
 		else if (nb < y)
 		{
             plus.style.backgroundColor = "red";
             moins.style.backgroundColor = "grey";
+            cpt++;
 		}
 		else if (nb == y)
 		{
@@ -39,8 +46,12 @@
             plus.style.backgroundColor = "grey";
             document.querySelector('#envoyer').classList.add("hidden");
             document.querySelector('#reponse').classList.remove("hidden");
-            document.querySelector("#reponse").innerHTML = " La reponse est " + y;
+            document.querySelector("#reponse").innerHTML = " Bravo! Tu as trouvé la bonne reponse en " + cpt + " coups";
 		}
-
+        if (cpt == 3)
+            {
+             document.querySelector("#reponse").innerHTML = " Tu as échouer";   
+            }
+        }
 
 	}
